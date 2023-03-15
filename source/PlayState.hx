@@ -77,6 +77,7 @@ import GameJolt.GameJoltAPI;
 import hxcodec.VideoHandler as NetStreamHandler;
 import hxcodec.VideoSprite;
 #end
+import PopupMessage;
 
 using StringTools;
 
@@ -427,6 +428,7 @@ class PlayState extends MusicBeatState
 	var inCutscene:Bool = false;
 	var usedTimeTravel:Bool = false;
 	var zoomStuff:Bool = true;
+     //   var popupmes:PopupMessage;
 
 	// BotPlay text
 	private var canShowPracticeTxt:Bool = true;

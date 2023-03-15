@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="imp.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="impostor idle0000" x="10" y="10" width="439" height="401" frameX="0" frameY="-35" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0001" x="464" y="10" width="427" height="408" frameX="-1" frameY="-28" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0002" x="906" y="10" width="403" height="415" frameX="-1" frameY="-22" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0003" x="1324" y="10" width="405" height="419" frameX="-1" frameY="-17" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0004" x="1744" y="10" width="399" height="423" frameX="-1" frameY="-13" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0005" x="2158" y="10" width="389" height="427" frameX="-1" frameY="-9" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0006" x="2562" y="10" width="394" height="430" frameX="-1" frameY="-6" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0007" x="2971" y="10" width="389" height="432" frameX="-1" frameY="-4" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0008" x="3375" y="10" width="381" height="433" frameX="-2" frameY="-3" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0009" x="3771" y="10" width="387" height="434" frameX="-2" frameY="-2" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0010" x="4173" y="10" width="384" height="435" frameX="-2" frameY="-1" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0011" x="4572" y="10" width="394" height="436" frameX="-2" frameY="0" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0012" x="4981" y="10" width="395" height="436" frameX="-2" frameY="0" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0013" x="5391" y="10" width="395" height="436" frameX="-2" frameY="0" frameWidth="439" frameHeight="437"/>
+	<SubTexture name="impostor idle0014" x="5801" y="10" width="396" height="436" frameX="-1" frameY="0" frameWidth="439" frameHeight="437"/>
+</TextureAtlas>

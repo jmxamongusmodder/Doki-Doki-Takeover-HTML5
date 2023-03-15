@@ -56,6 +56,7 @@ class HealthIcon extends FlxSprite
 
 	public function changeIcon(daChar:String)
 	{
+		char = daChar; // gotta make sure the icon itself is actually the changed char
 		if (!Paths.fileExists('images/icons/icon-$daChar.png', IMAGE))
 			daChar = 'bf-old';
 
@@ -70,13 +71,21 @@ class HealthIcon extends FlxSprite
 		else
 			loadGraphic(Paths.image('icons/icon-' + daChar), true, 150, 150);
 
-		animation.add(daChar, [0, 1, 2], 0, false, isPlayer);
-		animation.play(daChar);
+                if(!daChar == "impostor")
+                {
+		         animation.add(daChar, [0, 1, 2], 0, false, isPlayer);
+		         animation.play(daChar);
+                }
+                elseif(daChar == "impostor")
+                {
+		         animation.add(daChar, [0, 1], 0, false, isPlayer);
+		         animation.play(daChar);
+                }
 
 		if (SaveData.globalAntialiasing)
 			antialiasing = !pixelIcons.contains(daChar);
 
-		char = daChar; // gotta make sure the icon itself is actually the changed char
+		//char = daChar; // gotta make sure the icon itself is actually the changed char
 	}
 
 	override function updateHitbox()
