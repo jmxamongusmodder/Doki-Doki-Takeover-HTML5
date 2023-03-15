@@ -4834,16 +4834,6 @@ class PlayState extends MusicBeatState
 
 		if (controls.PAUSE && startedCountdown && canPause)
 			pauseState();
-
-		if (FlxG.keys.justPressed.7)
-		{
-			#if FEATURE_DISCORD
-			DiscordClient.changePresence("Chart Editor", null, null, true);
-			#end
-			MusicBeatState.switchState(new ChartingState());
-			sectionStart = false;
-		}
-
 		
 		if (zoomStuff)
 		{
