@@ -44,7 +44,7 @@ class DokiStoryState extends MusicBeatState
 		['My Sweets', 'Baka'],
 		['Deep Breaths', 'Obsession'],
 		['Reconciliation'],
-		['Crucify (Yuri Mix)', 'Beathoven (Natsuki Mix)', "It's Complicated (Sayori Mix)", 'Glitcher (Monika Mix)'],
+		['Crucify (Yuri Mix)', 'Beathoven (Natsuki Mix)', "It's Complicated (Sayori Mix)", 'Glitcher (Monika Mix)', 'Titular (Mc Mix)'],
 		['Hot Air Balloon', 'Shrinking Violet', 'Joyride', 'Our Harmony'],
 		['NEET', 'You and Me', 'Takeover Medley'],
 		['Love n\' Funkin\'', 'Constricted', 'Catfight', 'Wilted']

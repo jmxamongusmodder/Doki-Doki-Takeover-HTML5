@@ -2055,13 +2055,13 @@ class PlayState extends MusicBeatState
 				cg2.screenCenter();
 				add(cg2);
 			case 'wilted':
-				add(wiltedwindow);
 				boyfriend.cameras = [camGame2];
 				gf.cameras = [camGame2];
 				dad.cameras = [camGame2];
 				boyfriend.scrollFactor.set(0.9, 1);
 				gf.scrollFactor.set(0.9, 1);
 				dad.scrollFactor.set(0.9, 1);
+				add(wiltedwindow);
 				add(wiltedhey_senpai);
 				add(wiltedhey);
 				add(wiltedHmph);
@@ -3074,14 +3074,12 @@ class PlayState extends MusicBeatState
 			}
 			case 'wiltedbgin':
 			{
-				//Maybe play a sound effect here idk
 				whiteflash.makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
 				whiteflash.alpha = 0.001;
 				FlxTween.tween(whiteflash, {alpha: 1}, length, {ease: FlxEase.sineOut});
 			}
 			case 'wiltedbgout':
 			{
-				//Maybe play a sound effect here idk
 				wiltswap(0, true);
 				whiteflash.makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.WHITE);
 				whiteflash.alpha = 1;
@@ -3778,15 +3776,14 @@ class PlayState extends MusicBeatState
 
 				if (section.noteSwap)
 				{
-					if (curStage == "dokiglitcher"
-						|| (curStage == "wilted" && (gottaHitNote && !mirrormode || !gottaHitNote && mirrormode)))
+					if (curStage == "dokiglitcher" || (curStage == "wilted" && (gottaHitNote && !mirrormode || !gottaHitNote && mirrormode)))
 					{
-						noteStyle = "pixel";
+						//noteStyle = "pixel";
 					}
 				}
 				else if (curStage == "wilted" && (gottaHitNote && mirrormode || !gottaHitNote && !mirrormode))
 				{
-					noteStyle = "pixel";
+					//noteStyle = "pixel";
 				}
 
 				var oldNote:Note;
@@ -4199,7 +4196,6 @@ class PlayState extends MusicBeatState
 							dad.x += 156;
 							dad.y -= 74;
 						}
-					// Leaving this here just incase but if left unused it can be removed
 					case 'clubroomevil' | 'libitina':
 						dad.x = 340;
 						dad.y = -139;
@@ -4837,7 +4833,7 @@ class PlayState extends MusicBeatState
 		if (controls.PAUSE && startedCountdown && canPause)
 			pauseState();
 
-		if (FlxG.keys.justPressed.F7 #if !debug && SaveData.unlockedEpiphany #end)
+		if (FlxG.keys.justPressed.7)
 		{
 			#if FEATURE_DISCORD
 			DiscordClient.changePresence("Chart Editor", null, null, true);
@@ -6389,7 +6385,6 @@ class PlayState extends MusicBeatState
 								add(blackScreen);
 								FlxG.sound.play(Paths.sound('Lights_Shut_off'), 0.7);
 							case 552:
-								// shit gets serious
 								yuriGoCrazy();
 							case 568:
 								remove(blackScreen);
@@ -6741,6 +6736,38 @@ class PlayState extends MusicBeatState
 				case 'neet':
 					switch (curStep)
 					{
+						case 250:
+							scorePop = false;
+							FlxTween.tween(healthBarBG, {alpha: 0}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(healthBar, {alpha: 0}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(iconP1, {alpha: 0}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(iconP2, {alpha: 0}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(scoreTxt, {alpha: 0}, 2, {ease: FlxEase.sineIn});
+
+							FlxTween.tween(laneunderlay, {alpha: 0}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(laneunderlayOpponent, {alpha: 0}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(opponentStrums.members[i], {alpha: 0}, 1, {ease: FlxEase.circOut});
+							FlxTween.tween(playerStrums.members[i], {alpha: 0}, 1, {ease: FlxEase.circOut});
+
+							if (SaveData.judgementCounter)
+								FlxTween.tween(judgementCounter, {alpha: 0}, 2, {ease: FlxEase.sineIn});
+
+							defaultCamZoom = 0.63;
+						case 255:
+							scorePop = true;
+							FlxTween.tween(healthBarBG, {alpha: 1}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(healthBar, {alpha: 1}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(iconP1, {alpha: 1}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(iconP2, {alpha: 1}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(scoreTxt, {alpha: 1}, 2, {ease: FlxEase.sineIn});
+
+							FlxTween.tween(laneunderlay, {alpha: 1}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(laneunderlayOpponent, {alpha: 1}, 2, {ease: FlxEase.sineIn});
+							FlxTween.tween(opponentStrums.members[i], {alpha: 1}, 1, {ease: FlxEase.circOut});
+							FlxTween.tween(playerStrums.members[i], {alpha: 1}, 1, {ease: FlxEase.circOut});
+
+							if (SaveData.judgementCounter)
+								FlxTween.tween(judgementCounter, {alpha: 1}, 2, {ease: FlxEase.sineIn});
 						case 384:
 							gf.alpha = 0.001;
 							deskfront.alpha = 0.001;

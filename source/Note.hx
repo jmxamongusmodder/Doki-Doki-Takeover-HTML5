@@ -84,7 +84,6 @@ class Note extends FlxSprite
 			mirrormode = SaveData.mirrorMode;
 
 		x += (SaveData.middleScroll ? PlayState.STRUM_X_MIDDLESCROLL : PlayState.STRUM_X) + 50;
-		// MAKE SURE ITS DEFINITELY OFF SCREEN?
 		y -= 2000;
 
 		this.strumTime = strumTime;

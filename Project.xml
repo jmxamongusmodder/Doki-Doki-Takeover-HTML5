@@ -40,11 +40,11 @@
 	<!-- Defines whether Game Jolt integration is enabled. -->
 	<!-- <define name="FEATURE_GAMEJOLT" if="PUBLIC_BUILD" unless="hl" /> -->
 	<!-- Defines whether a log file can be created. Depends on FEATURE_FILESYSTEM. Pointless when trace logging is disabled. -->
-	<define name="FEATURE_LOGGING" if="FEATURE_FILESYSTEM" unless="PUBLIC_BUILD" />
+	<!-- <define name="FEATURE_LOGGING" if="FEATURE_FILESYSTEM" unless="PUBLIC_BUILD" /> -->
 	<!-- Defines whether or not language select is available. -->
 	<!-- <define name="FEATURE_LANGUAGE" /> -->
 	<!-- Defines whether there's an unlock all function in the Options menu. -->
-	<define name="FEATURE_UNLOCK" unless="PUBLIC_BUILD" />
+	<!-- <define name="FEATURE_UNLOCK" unless="PUBLIC_BUILD" /> -->
 	<!-- Defines whether or not the Izzy Engine crash handler is used. -->
 	<define name="CRASH_HANDLER" if="desktop" unless="debug" />
 

@@ -74,7 +74,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		if (!libbie)
 		{
 			bf = new Character(x, y, daBf, !isBig);
-			trace(bf == null ? "bf if hella dumb" : "bf has a big forehead");
+			//trace(bf == null ? "bf if hella dumb" : "bf has a big forehead");
 			add(bf);
 
 			camFollow = new FlxObject(bf.getGraphicMidpoint().x, bf.getGraphicMidpoint().y, 1, 1);

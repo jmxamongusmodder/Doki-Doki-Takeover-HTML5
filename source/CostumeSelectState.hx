@@ -173,7 +173,7 @@ class CostumeSelectState extends MusicBeatState
 		backdrop = new FlxBackdrop(Paths.image('scrollingBG'));
 		backdrop.velocity.set(-40, -40);
 		backdrop.antialiasing = SaveData.globalAntialiasing;
-		backdrop.shader = colorShader.shader;
+		//backdrop.shader = colorShader.shader;
 		add(backdrop);
 
 		chara = new FlxSprite(522, 9).loadGraphic(Paths.image('costume/bf', 'preload'));
@@ -325,8 +325,8 @@ class CostumeSelectState extends MusicBeatState
 					savecostume();
 		}
 
-		colorShader.color1 = colorTween1.color;
-		colorShader.color2 = colorTween2.color;
+		//colorShader.color1 = colorTween1.color;
+		//colorShader.color2 = colorTween2.color;
 	}
 
 	function loadcharacter(char:String, ?costume:String, ?forceColor:FlxColor = 0xFFFDDBF1)
@@ -365,8 +365,8 @@ class CostumeSelectState extends MusicBeatState
 
 		var goku:FlxColor = FlxColor.fromHSB(barColor.hue, barColor.saturation, barColor.brightness * 1.3);
 
-		FlxTween.color(colorTween1, 1, colorShader.color1, goku);
-		FlxTween.color(colorTween2, 1, colorShader.color2, barColor);
+		//FlxTween.color(colorTween1, 1, colorShader.color1, goku);
+		//FlxTween.color(colorTween2, 1, colorShader.color2, barColor);
 
 		if (charCostume != null && charCostume != 'hueh' && charCostume != '')
 			chara.loadGraphic(Paths.image('costume/' + char + '-' + charCostume, 'preload'));
